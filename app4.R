@@ -12,7 +12,7 @@ ui <- dashboardPage(
       heigth = '47px'),
     titleWidth = '200px'
   ),
-  sidebar = dashboardSidebar(
+  sidebar <- dashboardSidebar(
     width = '150px',
     disable = FALSE,
     collapsed = TRUE, # app inicia com side bar recolhido
@@ -27,8 +27,8 @@ ui <- dashboardPage(
     ),
     fluidRow(
       box(
-        title = 'Distribuição da população por grupo etário, BR 2020',
-        footer = 'Fonte: IBGE. Projeção 2018',
+        title = 'Distribui????o da popula????o por grupo et??rio, BR 2020',
+        footer = 'Fonte: IBGE. Proje????o 2018',
         status = 'primary', 
         solidHeader = TRUE, # muda o header
         collapsible = TRUE, # permite recolher as informacoes
@@ -37,8 +37,8 @@ ui <- dashboardPage(
         plotOutput('gropoetario')
         ),
       box(
-        title = 'Distribuição da população por sexo, BR 2020',
-        footer = 'Fonte: IBGE. Projeção 2018',
+        title = 'Distribui????o da popula????o por sexo, BR 2020',
+        footer = 'Fonte: IBGE. Proje????o 2018',
         status = 'primary', 
         solidHeader = TRUE, # muda o header
         collapsible = TRUE, # permite recolher as informacoes
